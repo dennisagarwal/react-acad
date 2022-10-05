@@ -5,12 +5,11 @@ import {BrowserRouter, Route,Routes} from 'react-router-dom';
 import AllMeetups from './pages/AllMeetups';
 import NewMeetup from './pages/NewMeetup';
 import Favorites from './pages/Favorites'
-import MainNavigation from './components/layout/MainNavigation';
+import Layout from './components/layout/layout';
 
 function App() {
   return (
-    <div>
-      <MainNavigation/>
+    <Layout>
       <Routes>
       <Route path='/' element={<AllMeetups />} />
       <Route path='/new-meetup' element={<NewMeetup />} />
@@ -20,7 +19,7 @@ function App() {
       <Todo text='task 1'/>
       <Todo text='task 2'/>
       <Todo text='task 3'/> */}
-    </div>
+    </Layout>
   );
 }
 
