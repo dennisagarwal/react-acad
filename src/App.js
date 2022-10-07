@@ -6,6 +6,7 @@ import AllMeetups from './pages/AllMeetups';
 import NewMeetup from './pages/NewMeetup';
 import Favorites from './pages/Favorites'
 import Layout from './components/layout/layout';
+import {FavoritesContextProvider} from './store/favorites-context';
 
 function App() {
   return (
